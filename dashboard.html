@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>Thông Tin Khách Hàng</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Xin chào, <span id="customer-name">Người dùng</span></h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Trang Chủ</a></li>
+                <li><a href="orders.html">Lịch Sử Hóa Đơn</a></li>
+                <li><button id="logout-btn">Đăng Xuất</button></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h2>Dịch vụ khả dụng</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Chọn</th>
+                    <th>Dịch vụ</th>
+                    <th>Số tiền</th>
+                </tr>
+            </thead>
+            <tbody id="service-list"></tbody>
+        </table>
+
+        <h2>Hóa đơn tháng <span id="current-month"></span></h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Dịch vụ</th>
+                    <th>Số tiền</th>
+                    <th>Thanh toán</th>
+                </tr>
+            </thead>
+            <tbody id="billing-list"></tbody>
+        </table>
+
+        <h3>Dịch vụ đã chọn</h3>
+        <table>
+            <thead>
+                <tr>
+                    <th>Dịch vụ</th>
+                    <th>Số tiền</th>
+                    <th>Thanh toán</th>
+                </tr>
+            </thead>
+            <tbody id="selected-services-list"></tbody>
+        </table>
+        <div>
+            <h3>Tổng số tiền cần thanh toán: <span id="total-amount">0</span>đ</h3>
+            <button onclick="proceedToPayment()">Tiến hành thanh toán</button>
+        </div>
+    </main>
+    <script src="script.js"></script>
+    <script src="logout.js"></script>
+</body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>Danh Sách Dịch Vụ</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Chọn Dịch Vụ</h1>
+    </header>
+    <main>
+        <table>
+            <thead>
+                <tr>
+                    <th>Dịch vụ</th>
+                    <th>Giá</th>
+                    <th>Chọn</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Internet</td>
+                    <td>100.000đ</td>
+                    <td><button onclick="confirmPayment('Internet', 100000)">Chọn</button></td>
+                </tr>
+                <tr>
+                    <td>Điện</td>
+                    <td>200.000đ</td>
+                    <td><button onclick="confirmPayment('Điện', 200000)">Chọn</button></td>
+                </tr>
+                <tr>
+                    <td>Nước</td>
+                    <td>300.000đ</td>
+                    <td><button onclick="confirmPayment('Nước', 300000)">Chọn</button></td>
+                </tr>
+            </tbody>
+        </table>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
+
