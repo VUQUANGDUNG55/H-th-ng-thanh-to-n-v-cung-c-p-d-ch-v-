@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>Thông Tin Khách Hàng</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header>
+        <h1>Xin chào, <span id="customer-name">Người dùng</span></h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Trang Chủ</a></li>
+                <li><a href="orders.html">Lịch Sử Hóa Đơn</a></li>
+                <li><button id="logout-btn">Đăng Xuất</button></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h2>Hóa đơn tháng <span id="current-month"></span></h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Dịch vụ</th>
+                    <th>Số tiền</th>
+                    <th>Thanh toán</th>
+                </tr>
+            </thead>
+            <tbody id="billing-list"></tbody>
+        </table>
+    </main>
+    <script src="js/script.js"></script>
+    <script src="js/logout.js"></script>
+</body>
+</html>
